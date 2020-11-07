@@ -18,7 +18,7 @@ const RequiredEnv = [
 ]
 
 if (!RequiredEnv.every(key => typeof process.env[key] !== 'undefined')) {
-  console.error(`One of more of the required environment variables (${RequiredEnv.join(', ')}) are not defined. Please check your environment and try again.`)
+  console.error(`One or more of the required environment variables (${RequiredEnv.join(', ')}) are not defined. Please check your environment and try again.`)
   process.exit(-1)
 }
 
